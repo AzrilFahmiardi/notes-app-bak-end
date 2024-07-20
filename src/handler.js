@@ -32,7 +32,7 @@ const addNoteHandler = (request, h) => {
     return response;
   }
 
-  const response = h.respone({
+  const response = h.response({
     status: "fail",
     message: "Catatan gagal dikirim",
   });
@@ -61,7 +61,7 @@ const getNotebyIdHandler = (request, h) => {
     };
   }
 
-  const respone = h.respone({
+  const respone = h.response({
     status: "fail",
     message: "Catatan tidak ditemukan",
   });
@@ -87,7 +87,7 @@ const editNoteByIdHandler = (request, h) => {
       updatedAt,
     };
 
-    const respone = h.respone({
+    const respone = h.response({
       status: "succes",
       message: "Catatan berhasil diperbarui",
     });
